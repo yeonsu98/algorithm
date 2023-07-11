@@ -14,3 +14,17 @@ while len(result) != 6:
 result.sort()
 print("로또 추첨 결과 = ", result)
 
+print("="*50)
+
+lotto = set()
+
+while len(lotto) != 6:
+    n = r.randint(1, 45)
+    lotto.add(n)
+
+lotto = list(lotto)
+lotto.sort()
+print("lotto =", lotto)
+
+
+
