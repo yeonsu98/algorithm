@@ -1,0 +1,16 @@
+windows 단축키)
+window + e : 탐색기
+window + r : 실행창
+
+
+실행창 명령)
+cmd : 명령 프롬프트(= console)
+appwiz.cpl : 프로그램 및 기능
+
+
+cmd 명령)
+1. cls : 화면 지우기 
+2. cd : 이동
+3. dir : 현재 폴더의 목록을 출력
+
+※ cmd에서 tab키는 자동완성
