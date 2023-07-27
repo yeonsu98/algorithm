@@ -5,7 +5,17 @@
 # - 자료구조 Queue를 사용
 
 def bfs(graph, node, visited):
+    queue = [node]
     visited[node] = True
+
+    while queue:
+        node = queue.pop(0)
+        print(node)
+
+        for i in graph[node]:
+            if visited[i] == False:
+                queue.append(i)
+                visited[i] = True
 
 graph = [
     [],             # 0번 노드는 없어서 비운다
@@ -20,4 +30,5 @@ graph = [
 ]
 
 visited = [False] * 9
+bfs(graph, 2, visited)
 
