@@ -50,7 +50,7 @@ print(f"출발지 : {src} , 목적지 : {dst}")
 
 # m.bfs(graph, src, dst, maze)
 
-path = m.bfs2(graph, src, dst, maze)
+path = m.bfs(graph, src, dst, maze)
 m.printPath(maze, path)
 
 path.reverse()

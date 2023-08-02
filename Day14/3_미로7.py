@@ -13,19 +13,14 @@ maze = [
     [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1]
 ]
 
-m.printMaze(maze)
 
-nodeList = m.getNodeList(maze)
+nodeList = m.getNodeList(maze)      # 0값 좌표 리스트
+graph = m.getNodeGraph(nodeList)    # 인접 그래프
 
-graph = m.getNodeGraph(nodeList)
+src = m.findSource(maze)            # 출발지
+dst = m.findDestination(maze)       # 목적지
 
-src = m.findSource(maze)
-dst = m.findDestination(maze)
-print(f"출발지 : {src} , 목적지 : {dst}")
-
-# m.bfs(graph, src, dst, maze)
-
-path = m.bfs2(graph, src, dst, maze)
+path = m.bfs(graph, src, dst, maze)
 m.printPath(maze, path)
 
 path.reverse()
