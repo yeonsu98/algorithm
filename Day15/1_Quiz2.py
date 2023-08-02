@@ -16,6 +16,7 @@ def bfs(graph, src):
             if fri not in visited:
                 queue.append(fri)
                 visited.add(fri)
+                
 
 # 이동 가능한 좌표 파악 
 def getNodeList(graph):
